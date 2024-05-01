@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicBrilliance</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+       
+/* form{
+    margin-button: 20px;
+
+} */
+body {
+    background-color: rgba(125, 171, 171, 0.5);
+    background-image:  url(https://i.ibb.co/Sf6Bd1V/Picsart-24-04-25-21-31-43-204.jpg);
+
+    /* <img src="https://i.ibb.co/Sf6Bd1V/Picsart-24-04-25-21-31-43-204.jpg" alt="Picsart-24-04-25-21-31-43-204" border="0"> */
+   
+    background-size: 100%; /* Sets the background image size to 50% of its original size */
+    /* Positions the image at the center */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+}
+
+
+
+
+h1{
+    font-size: 70px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: make the text bold */
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    margin-top:5%;
+    transition: transform 0.3s ease;
+    color: #ece8ea;
+    float: right;
+    margin-right: 39%;
+    
+}
+h2 {
+    font-size: 35px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #8ca57e;
+    float: left;
+    margin-top: 25%;
+    margin-left: 35px;
+    
+}
+
+#mb:hover {
+    background-color: #c0d0bc;
+}
+input[type="file"] {
+    
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+
+}
+.custom-file-upload {
+        /* CSS styles for labels with the custom-file-upload class */
+      
+        margin-left: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    background-color:rgba(23, 28, 24, 0.5);
+    border-radius: 20px;
+   
+    
+}
+.nam{
+    display: flex;
+    flex-direction: column;
+    margin-top: 280px;
+    
+}
+#mb{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(226, 231, 227, 0.5);
+    border-radius: 20px;
+}
+.back{
+    position : absolute;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
+
+img {
+    width: 100%;
+    max-width: 500px; /* Example width limit */
+    border: 2px solid black;
+    margin: 250px;
+    margin-left: 35%;
+
+  bottom: 20px; /* Adjust this value as needed */
+  z-index: 0; /* Places the image below the content */
+  text-align: center;
+  z-index: 1; /* Ensures content appears above the background */
+  border-radius: 40px
+  }
+
+  
+
+
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+
+        nav {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5); /* Transparent white color */
+            color: black; /* Text color for the navbar */
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            color: #000000;
+            font-family: "Great Vibes", cursive;
+            font-weight: 400;
+            text-decoration: none;
+            /* padding: 10px 20px; */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #5f685f;
+        }
+
+      
+
+
+        .additional-images {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
+        .additional-images img {
+            /* width: 100%;
+            max-width: 300px; Adjust maximum width as needed */
+            margin: 0 10px; /* Adjust margin between images */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+            margin-left: 7%;
+            margin-top: 50px;
+}
+        
+
+        .face {
+            margin-bottom: 0; /* Remove bottom margin for the face image */
+        }
+
+    </style>
+
+   
+</head>
+<body>
+    <!-- <img src="https://i.ibb.co/m8VqrRS/Screenshot-2023-12-02-222724.png" alt="homeimage"> -->
+
+    <!-- <img src="/edited.jpg" alt="Edited Image">
+    <br>
+    <a href="/download">Download Image</a> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/navbar/edit.html">LearnToEdit</a></li>
+            <!-- <li><a href="#Myedits">MyEdits</a></li> -->
+            <li><a href="/navbar/lr.html">MyEdits</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+            <li><a href="/navbar/contact.html">Personalize</a></li>
+            <!-- <li><a href="/navbar/login.html">Login</a></li>
+            <li><a href="/navbar/signup.html">Signup</a></li> -->
+        </ul>
+    </nav>
+
+
+
+
+
+    <!-- <div class="video">
+        <video autoplay loop muted playsinline class="back">
+            <source src = "photos/edit.mp4" type="video/mp4">
+        </video>
+     -->
+    <h1>BasicBrilliance</h1>
+    <h2>Unveiling the Natural Beauty of photo.....</h2>
+    <form id="uploadForm" enctype="multipart/form-data" action="/upload" method="post">
+        <div class="nam">
+        <label for="photoInput" class="custom-file-upload">
+            <input type="file" id="photoInput" name="photo" accept="image/*" required>
+            
+        </label>
+        <button id="mb" type="submit">Upload and Magic</button>
+    </div>
+    <div id="output"></div>
+   
+    <img src="https://i.ibb.co/2kCvRXW/IMG-9503.jpg" alt="IMG-9503">
+    <div class="additional-images">
+        <img src="https://i.ibb.co/98YyWZ2/l9wcz8p76u791.jpg" alt="l9wcz8p76u791" >
+        <img src="https://i.ibb.co/m619kDB/bw.webp" alt="bw">
+        <!-- <img src="https://i.ibb.co/m8VqrRS/Screenshot-2023-12-02-222724.png" alt=""> -->
+    </div>
+    </div>
+    </form>
+     
+   
+    
+<script >
+// Assuming magicButton is the ID of your button
+const magicButton = document.getElementById('magicButton');
+magicButton.addEventListener('click', () => {   
+    alert('Magic is happening '); 
+}); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const form = document.getElementById('uploadForm');
+const output = document.getElementById('output');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    try {
+        const response = await fetch('/upload', {
+            method: 'POST',
+            body: formData
+        });
+        const responseData = await response.json(); // assuming the server sends back JSON
+        output.innerHTML = `<img src="${responseData.url}" alt="Edited Photo">`;
+        if (response.ok) {
+            const data = await response.json();
+            const img = document.createElement('img');
+            img.src = data.url;
+            output.appendChild(img);
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = data.url;
+            downloadLink.download = 'edited.jpg';
+            downloadLink.textContent = 'Download Edited Image';
+            output.appendChild(downloadLink);
+        } else {
+            output.textContent = 'Error processing the image.';
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+});
+
+    </script>
+</body>
+</html>
